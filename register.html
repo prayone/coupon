@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="weui/weui.css">
+    <script src="weui/jquery-2.1.4.js"></script>
+    <link rel="stylesheet" href="weui/jquery-weui.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="swiper/idangerous.swiper.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="swiper/idangerous.swiper.js"></script>
+    <script src="weui/zepto.js"></script>
+    <script src="weui/fastclick.js"></script>
+    <script src="js/main.js"></script>
+    <script src="weui/jquery-weui.js"></script>
+    <script>
+        $(function() {
+            FastClick.attach(document.body);
+        });
+    </script>
+    <style>
+        body{
+            background: url("./img/login.jpg") no-repeat ;
+            z-index: -99!important;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        #sure{
+            margin-top: 20px;
+            font-size: 20px;
+
+        }
+        .quxiao{
+            font-size: 20px;
+        }
+        .register{
+            height: 45px;
+            line-height: 45px;
+            font-size: 20px;
+            /*background-color: #ff6666;*/
+            color: #888;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+        .weui-cells__title{
+            margin: 0;
+            height: 40px;
+            line-height: 40px;
+            font-size: 15px;
+        }
+        .weui-cell{
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .weui-btn{
+            width: 70%!important;
+        }
+        input:focus,
+        input:active:focus,
+        input.active:focus,
+        input.focus,
+        input:active.focus,
+        input.active.focus {
+            outline: none;
+        }
+        p{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body ontouchstart>
+    <div class="warp">
+        <div class="register text-center">
+            注册
+        </div>
+        <div class="weui-cells__title">用户名</div>
+        <div class="weui-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="text" id="zhuce-up" placeholder="请输入用户名">
+                </div>
+            </div>
+        </div>
+        <div class="weui-cells__title">密码</div>
+        <div class="weui-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <input  id="pw1" class="weui-input" type="password" placeholder="请输入密码">
+                </div>
+            </div>
+        </div>
+        <div class="weui-cells__title">确认密码</div>
+        <div class="weui-cells">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <input id="pw2" class="weui-input" type="password" placeholder="请再次输入密码">
+                </div>
+            </div>
+        </div>
+            <button class="weui-btn  weui-btn_primary" id="sure">提交注册</button>
+            <button class="weui-btn  weui-btn_warn quxiao">取消</button>
+        <p class="text-center"><a href="login.html" >已有账号？去登陆</a></p>
+    </div>
+</body>
+</html>

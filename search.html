@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>券妈妈</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+       ">
+    <link rel="stylesheet" href="weui/weui.css">
+    <script src="weui/jquery-2.1.4.js"></script>
+    <link rel="stylesheet" href="weui/jquery-weui.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="swiper/idangerous.swiper.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="swiper/idangerous.swiper.js"></script>
+    <script src="weui/zepto.js"></script>
+    <script src="weui/fastclick.js"></script>
+    <script src="js/main.js"></script>
+    <script src="weui/jquery-weui.js"></script>
+    <script>
+        $(function() {
+            FastClick.attach(document.body);
+        });
+    </script>
+    <style>
+
+
+        .header .input {
+            width: 70%;
+            display: inline-block;
+
+        }
+        .weui-cell__bd{
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            height: 30px;
+            padding: 5px 10px 0 10px;
+            background-color: #eee;
+            overflow: hidden;
+        }
+        .weui-cell__bd i{
+            float: right;
+            font-size: 20px;
+            color: #777;
+        }
+         .allSearch{
+            background-color: #eee;
+            height: 45px;
+            line-height: 45px;
+            padding-left: 16px;
+            font-weight: 400;
+            color: #444;
+        }
+        .searchInfo ul
+        {
+            background-color: #f9f9f9;
+            padding: 25px 0 5px 15px;
+        }
+        .searchInfo ul li{
+            border: 1px solid #dedede;
+            height: 26px;
+            line-height: 26px;
+            width: inherit;
+            border-radius: 14px;
+            text-align: center;
+            padding: 0 15px;
+            display: inline-block;
+            margin-right: 8px;
+            margin-bottom: 12px;
+            max-width: 140px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 14px!important;
+        }
+        .hotInfo{
+            overflow: hidden;
+        }
+        .hotInfo li{
+            width: 21%;
+            float: left;
+            padding: 30px 5px;
+            border: 1px solid #eee;
+        }
+
+    </style>
+</head>
+<body ontouchstart>
+<div class="wrap">
+    <header class="header">
+        <div class="headTop">
+            <div class="qmm_logo">
+                <img src="img/qmm_logo.png" alt="">
+            </div>
+            <div class="backhome">
+                <a href="index.html"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__bd">
+                <input class="weui-input input" type="text" placeholder="商家" >
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+        </div>
+
+    </header>
+    <div class="searchInfo">
+        <div class="allSearch">
+            大家都在搜
+        </div>
+        <ul>
+            <li>京东</li>
+            <li>唯品会</li>
+            <li>聚美优品</li>
+            <li>麦当劳</li>
+            <li>乐蜂网</li>
+            <li>苏宁易购</li>
+            <li>小肥羊</li>
+            <li>东方既白</li>
+            <li>德克士</li>
+            <li>易购</li>
+            <li>当当</li>
+            <li>真功夫</li>
+
+        </ul>
+    </div>
+    <div class="hotul">
+        <div class="allSearch">
+            热门商家
+        </div>
+        <ul class="hotInfo">
+            <li><a href=""><img src="img/jd.png" alt=""></a></li>
+            <li><a href=""><img src="img/jd1.png" alt=""></a></li>
+            <li><a href=""><img src="img/jd2.png" alt=""></a></li>
+            <li><a href=""><img src="img/jd3.png" alt=""></a></li>
+            <li><a href=""><img src="img/jd1.png" alt=""></a></li>
+            <li><a href=""><img src="img/jd2.png" alt=""></a></li>
+            <li><a href=""><img src="img/jd3.png" alt=""></a></li>
+            <li><a href=""><img src="img/jd.png" alt=""></a></li>
+            <li><a href=""><img src="img/jd1.png" alt=""></a></li>
+            <li><a href=""><img src="img/jd2.png" alt=""></a></li>
+            <li><a href=""><img src="img/jd3.png" alt=""></a></li>
+            <li><a href=""><img src="img/jd.png" alt=""></a></li>
+
+        </ul>
+    </div>
+    <footer class="footer">
+        <div class="weui-tabbar">
+            <a href="index.html" class="weui-tabbar__item weui-bar__item_on">
+                    <span style="display: inline-block;position: relative;">
+                        <img src="./img/shouye.png" alt="" class="weui-tabbar__icon">
+                    </span>
+            </a>
+            <a href="javascript:;" class="weui-tabbar__item">
+                <img src="./img/yhj.png" alt="" class="weui-tabbar__icon">
+            </a>
+            <a href="javascript:;" class="weui-tabbar__item">
+                    <span style="display: inline-block;position: relative;">
+                        <img src="./img/fuli.png" alt="" class="weui-tabbar__icon">
+                    </span>
+            </a>
+            <a href="javascript:;" class="weui-tabbar__item">
+                <img src="./img/zdm.png" alt="" class="weui-tabbar__icon">
+            </a>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
+
+

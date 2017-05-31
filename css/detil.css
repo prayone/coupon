@@ -1,0 +1,46 @@
+.headTop h2{
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+}
+.header .headimg{
+    width: 100%;
+}
+.discount{
+    margin: 10px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #eee;
+    color: #666;
+    font-size: 14px;
+
+}
+.discountInfo{
+    margin: 10px 0;
+}
+.discountInfo span{
+    padding-left: 10px;
+    border-left: 5px solid #f00;
+}
+.item-content{
+    padding-left: 8px;
+}
+.item-first{
+    margin-bottom: 10px;
+}
+.footer span{
+    height:50px;
+    line-height: 50px;
+}
+.footer i{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    font-size: 16px;
+    color: red;
+}
+.footer {
+    margin-top: 44px;
+}
+.bigimg{
+    width: 100px;
+}

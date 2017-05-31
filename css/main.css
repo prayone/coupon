@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: PingFang-Medium,PingFangSC-Regular,Helvetica;
+    font-family: arial,"Hiragino Sans GB",Simhei,sans-serif;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+}
+.clearboth:after{
+    content:" ";
+    display:table;
+    clear:both;
+}
+.wrap{
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+a{
+    cursor: pointer;
+}
+ul{
+    list-style:none;
+}
+.header .headTop {
+    height: 50px;
+    width: 100%;
+    background-color:#ff6666;
+    position: relative;
+}
+.headTop .menu{
+    position: absolute;
+    right: 20px;
+    top:13px;
+}
+.headTop .menu a{
+    margin-left: 20px;
+}
+.headTop .menu i{
+    font-size: 20px;
+    color: #fff;
+}
+.header .headTop .qmm_logo{
+    width: 89px;
+    height: 50px;
+    margin: 0 auto;
+}
+.swiper-container, .swiper-slide {
+    width: 100%;
+}
+ img{
+    width: 100%;
+    height: 100%;
+}
+.content{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.content .placeholder{
+    /*border: 1px solid #f00;*/
+    margin-bottom:7px;
+}
+.three-block .placeholder{
+    /*border: 1px solid #f00;*/
+}
+.content .placeholder{
+    /*border: 1px solid #f00;*/
+}
+.content .placeholder  .fleximg {
+    width: 45px;
+    height: 45px;
+    margin: 0 auto;
+}
+.content .placeholder p{
+    width: 100%;
+    height: 29px;
+    line-height: 29px;
+    text-align: center;
+    font-size: 13px;
+    /*overflow: hidden;*/
+}
+.three-block{
+    background-color: #eee;
+    padding-top:3px;
+    padding-right: 1px;
+}
+.three-block .tb-img{
+    width: 100%;
+    /*height: 107px;*/
+    border:1px solid #eee;
+    border-right: none;
+}
+.goods-list {
+    padding:10px 5px;
+    font-size: 15px;
+}
+.titlt-hb{
+  font-size: 15px;
+}
+.titlt-sc{
+    color: #f00;
+    font-size: 15px;
+    height: 40px;
+    line-height: 40px;
+}
+.goods-list ul li .weui-media-box{
+    padding: 0;
+}
+.goods-list ul li .weui-media-box__hd {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+}
+.goods-list ul li .weui-media-box__bd {
+    -webkit-box-flex: 2;
+    -webkit-flex: 2;
+    flex: 2;
+}
+.goods-list ul li .goods-img{
+    width: 77px;
+    height: 77px;
+    padding-right:20px;
+}
+.goods-list ul li{
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+.clearboth{
+    overflow: hidden;
+}
+.goods-list ul li .qmm-icon{
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    padding-left:30px;
+    background: url("../img/quan.png") left center no-repeat;
+    -webkit-background-size:25px 25px;
+    background-size:25px 25px;
+    color: #000;
+}
+
+.goods-list ul li .renshu{
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+}
+.footer{
+    margin-top: 42px;
+}
+.footer .weui-tabbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+}
+.footer i{
+    height: 33px;
+    line-height: 33px;
+    color:#666;
+}
+.on-color{
+    color: #23B504!important;
+}
+.headTop .backhome{
+    position: absolute;
+    left: 20px;
+    top:13px;
+}
+.headTop .backhome i{
+    font-size: 20px;
+    color: #fff;
+}
