@@ -1,4 +1,5 @@
-window.onload = function() {
+
+function initSwiper() {
     var mySwiper = new Swiper('.swiper-container',{
         mode:'horizontal',
         loop: true,
@@ -15,8 +16,10 @@ function chageColor(info) {
 }
 
 $(function () {
-    var targetUrl = 'http://119.29.254.72:3001';
 
+    // var targetUrl = 'http://119.29.254.72:3001';
+    //初始化sweiper高度
+    $('#swiper-container').height($(window).width()/16*6.5);
     // 菜单操作
     var username=getQueryString("username");
     function getQueryString(name) {
@@ -149,6 +152,7 @@ $(function () {
                 }
                 if(data.info){
                     console.log("登陆成功！")
+                    setCookie('username',username);
                     localStorage.setItem('username',username)
                     window.location.href="./index.html?username="+username;
                 }else{
@@ -159,3 +163,12 @@ $(function () {
         });
     };
 });
+function backhome(){
+    var username=getCookie("username");
+
+    if(username==null){
+        window.location.href="./index.html";
+    }else{
+        window.location.href="./index.html?username="+username;
+    }
+}

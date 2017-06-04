@@ -18,6 +18,8 @@
     <script src="weui/fastclick.js"></script>
     <script src="js/main.js"></script>
     <script src="weui/jquery-weui.js"></script>
+    <script src="js/util.js"></script>
+
     <script>
         $(function() {
             FastClick.attach(document.body);
@@ -94,7 +96,7 @@
                 <img src="img/qmm_logo.png" alt="">
             </div>
             <div class="backhome">
-                <a href="index.html"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></a>
+                <a href="javascript:0" onclick="backhome()"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></a>
             </div>
         </div>
         <div class="weui-cell">
@@ -146,24 +148,24 @@
         </ul>
     </div>
     <footer class="footer">
-        <div class="weui-tabbar">
-            <a href="index.html" class="weui-tabbar__item weui-bar__item_on">
-                    <span style="display: inline-block;position: relative;">
-                        <img src="./img/shouye.png" alt="" class="weui-tabbar__icon">
-                    </span>
-            </a>
-            <a href="javascript:;" class="weui-tabbar__item">
-                <img src="./img/yhj.png" alt="" class="weui-tabbar__icon">
-            </a>
-            <a href="javascript:;" class="weui-tabbar__item">
-                    <span style="display: inline-block;position: relative;">
-                        <img src="./img/fuli.png" alt="" class="weui-tabbar__icon">
-                    </span>
-            </a>
-            <a href="javascript:;" class="weui-tabbar__item">
-                <img src="./img/zdm.png" alt="" class="weui-tabbar__icon">
-            </a>
-        </div>
+               <div class="weui-tabbar">
+                   <a href="javascript:0" onclick="backhome()" class="weui-tabbar__item " onclick="chageColor(this)">
+                       <i class="fa fa-home weui-tabbar__icon on-color" aria-hidden="true"></i>
+                       <p class="weui-tabbar__label on-color" >首页</p>
+                   </a>
+                   <a href="javascript:;" class="weui-tabbar__item "  onclick="chageColor(this)">
+                       <i class="fa fa-money weui-tabbar__icon" aria-hidden="true"></i>
+                       <p class="weui-tabbar__label">优惠券</p>
+                   </a>
+                   <a href="javascript:;" class="weui-tabbar__item" onclick="chageColor(this)">
+                       <i class="fa fa-gift weui-tabbar__icon" aria-hidden="true" ></i>
+                       <p class="weui-tabbar__label">福利</p>
+                   </a>
+                   <a href="javascript:;" class="weui-tabbar__item" onclick="chageColor(this)">
+                       <i class="fa fa-smile-o weui-tabbar__icon" aria-hidden="true"></i>
+                       <p class="weui-tabbar__label">值得买</p>
+                   </a>
+               </div>
     </footer>
 </div>
 </body>
